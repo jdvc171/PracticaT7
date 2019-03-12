@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">PracticaT7</string>
     <string name="action_settings">Settings</string>
+    <string name="Categoria1">Comida</string>
+    <string name="Categoria2">Ocio</string>
+    <string name="Categoria3">Diversión</string>
+    <string name="Categoria4">Deporte</string>
+    <string name="Categoria5">Cultura</string>
+    <string name="Categoria6">Todas</string>
+
+    <string-array name="Categorias">
+        <item>@string/Categoria1</item>
+        <item>@string/Categoria2</item>
+        <item>@string/Categoria3</item>
+        <item>@string/Categoria4</item>
+        <item>@string/Categoria5</item>
+        <item>@string/Categoria6</item>
+    </string-array>
 </resources>
