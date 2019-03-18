@@ -52,7 +52,6 @@ public class CardAdapter extends ArrayAdapter {
             Lugar p = getItem(position);
             viewHolder.line1.setText(p.getNombre());
             viewHolder.RB1.setRating(p.getValoracion());
-
             row.setTag(viewHolder);
         }
         return row;

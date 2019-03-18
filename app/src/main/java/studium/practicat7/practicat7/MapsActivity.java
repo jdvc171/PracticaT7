@@ -68,7 +68,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     public void Colores (String categoria){
-        if(categoria.equals("Comida")){
+        if(categoria.equals("Comida")||categoria.equals("Food")|| categoria.equals("Repas")){
             for (Lugar p : listado) {
                 lugar = new LatLng((double)p.getLatitud(),(double)p.getLongitud());
                 mMap.addMarker(new MarkerOptions().position(lugar).title(p.getNombre()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
@@ -76,7 +76,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
 
-        if(categoria.equals("Ocio")){
+        if(categoria.equals("Ocio") ||categoria.equals("Leisure") ||categoria.equals("Loisir")){
             for (Lugar p : listado) {
                 lugar = new LatLng((double)p.getLatitud(),(double)p.getLongitud());
                 mMap.addMarker(new MarkerOptions().position(lugar).title(p.getNombre()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
@@ -84,7 +84,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
 
-        if(categoria.equals("Diversión")){
+        if(categoria.equals("Diversión") ||categoria.equals("Fun") ||categoria.equals("Amusant")){
             for (Lugar p : listado) {
                 lugar = new LatLng((double)p.getLatitud(),(double)p.getLongitud());
                 mMap.addMarker(new MarkerOptions().position(lugar).title(p.getNombre()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
@@ -92,7 +92,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
 
-        if(categoria.equals("Deporte")){
+        if(categoria.equals("Deporte") ||categoria.equals("Sports") ||categoria.equals("Sport")){
             for (Lugar p : listado) {
                 lugar = new LatLng((double)p.getLatitud(),(double)p.getLongitud());
                 mMap.addMarker(new MarkerOptions().position(lugar).title(p.getNombre()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
@@ -100,7 +100,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
 
-        if(categoria.equals("Cultura")){
+        if(categoria.equals("Cultura") ||categoria.equals("Culture") ||categoria.equals("Culture")){
             for (Lugar p : listado) {
                 lugar = new LatLng((double)p.getLatitud(),(double)p.getLongitud());
                 mMap.addMarker(new MarkerOptions().position(lugar).title(p.getNombre()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
@@ -108,7 +108,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
 
-        if(categoria.equals("Todas")){
+        if(categoria.equals("Todas") ||categoria.equals("All") ||categoria.equals("Tout")){
             for (Lugar p : listado) {
                 lugar = new LatLng((double)p.getLatitud(),(double)p.getLongitud());
                 mMap.addMarker(new MarkerOptions().position(lugar).title(p.getNombre()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));

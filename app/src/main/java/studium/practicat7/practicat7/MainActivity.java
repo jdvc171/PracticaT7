@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -15,10 +16,11 @@ import studium.practicat7.practicat7.Logic.LogicLugar;
 
 
 public class MainActivity extends AppCompatActivity {
-    Spinner lista1;
-    ArrayAdapter adapEstados;
+    public Spinner lista1;
+    public ArrayAdapter adapEstados;
     public List<Lugar> lstProd;
     String Seleccion;
+    public ImageView imgGps;
     public ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.card_listView);
         listView.addHeaderView(new View(this)); // añade espacio arriba de la primera card
         listView.addFooterView(new View(this)); // añade espacio debajo de la última card
-
+        imgGps = findViewById(R.id.ImgGps);
         adapEstados =  ArrayAdapter.createFromResource(this,R.array.Categorias,
                 android.R.layout.simple_spinner_item);
 
@@ -75,6 +77,76 @@ public class MainActivity extends AppCompatActivity {
                         onResume();
 
                         break;
+
+
+                    case "Food":
+                        Seleccion = "Food";
+                        filtro1("Food");
+
+                        break;
+
+                    case "Leisure":
+                        Seleccion = "Leisure";
+                        filtro1("Leisure");
+
+                        break;
+
+                    case "Fun":
+                        Seleccion = "Fun";
+                        filtro1("Fun");
+
+                        break;
+
+                    case "Sports":
+                        Seleccion = "Sports";
+                        filtro1("Sports");
+
+                        break;
+
+                    case "Culture":
+                        Seleccion = "Culture";
+                        filtro1("Culture");
+
+                        break;
+
+                    case "All":
+                        Seleccion = "All";
+                        onResume();
+
+                        break;
+
+
+
+                    case "Repas":
+                        Seleccion = "Repas";
+                        filtro1("Repas");
+
+                        break;
+
+                    case "Loisir":
+                        Seleccion = "Loisir";
+                        filtro1("Loisir");
+
+                        break;
+
+                    case "Amusant":
+                        Seleccion = "Amusant";
+                        filtro1("Amusant");
+
+                        break;
+
+                    case "Sport":
+                        Seleccion = "Sport";
+                        filtro1("Sport");
+
+                        break;
+
+                    case "Tout":
+                        Seleccion = "Tout";
+                        onResume();
+
+                        break;
+
                 }
             }
 
@@ -91,6 +163,20 @@ public class MainActivity extends AppCompatActivity {
                 App.productoActivo = lstProd.get(position -1);
                 App.accion = App.INFORMACION;
                 startActivity(new Intent(MainActivity.this, InformacionActivity.class));
+            }
+        });
+
+        imgGps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(!lista1.getSelectedItem().equals("Seleccionar Categoría") && lstProd!=null){
+                    Intent i = new Intent(MainActivity.this,MapsActivity.class);
+                    i.putExtra("categoria", Seleccion);
+                    startActivity(i);
+                }else{
+                    Toast.makeText(MainActivity.this, "Esta categoría está vacía", Toast.LENGTH_LONG).show();
+                }
             }
         });
 

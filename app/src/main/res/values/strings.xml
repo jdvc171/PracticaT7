@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">PracticaT7</string>
-    <string name="action_settings">Settings</string>
     <string name="Categoria0">Seleccionar Categoría</string>
     <string name="Categoria1">Comida</string>
     <string name="Categoria2">Ocio</string>
@@ -18,5 +17,13 @@
         <item>@string/Categoria5</item>
         <item>@string/Categoria6</item>
     </string-array>
-    <string name="title_activity_maps">Map</string>
+    <string name="Nombre">Nombre</string>
+    <string name="NombreHint">Nombre del lugar</string>
+    <string name="Categoria">Categoría: </string>
+    <string name="Latitud">Latitud</string>
+    <string name="Longitud">Longitud</string>
+    <string name="Valoracion">Valoración: </string>
+    <string name="Comentarios">Comentarios</string>
+    <string name="ComentariosHint">Introduzca comentarios sobre el lugar</string>
+
 </resources>

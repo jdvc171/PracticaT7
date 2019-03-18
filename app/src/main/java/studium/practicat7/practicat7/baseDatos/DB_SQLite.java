@@ -11,7 +11,7 @@ public class DB_SQLite extends SQLiteOpenHelper {
     public static final int OPEN_MODE_READ = 1;
     public static final int OPEN_MODE_WRITE = 2;
 
-    private static final String DATABASE_NAME = "lugares.sqlite";
+    private static final String DATABASE_NAME = "informacionLugares.sqlite";
     private static final int DATABASE_VERSION = 1;
 
     private static final String SQL_CREATE_ENTRIES =

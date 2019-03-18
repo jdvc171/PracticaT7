@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PracticaT7</string>
+    <string name="Categoria0">Select Category</string>
+    <string name="Categoria1">Food</string>
+    <string name="Categoria3">Fun</string>
+    <string name="Categoria4">Sports</string>
+    <string name="Categoria2">Leisure</string>
+    <string name="Categoria5">Culture</string>
+    <string name="Categoria6">All</string>
+    <string name="Nombre">Name</string>
+    <string name="NombreHint">Name of the place</string>
+    <string name="Categoria">"Caterory: "</string>
+    <string name="Latitud">Latitude</string>
+    <string name="Longitud">Longitude</string>
+    <string name="Valoracion">"Valoration: "</string>
+    <string name="Comentarios">Comments</string>
+    <string name="ComentariosHint">Write any comment about the place</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PracticaT7</string>
+    <string name="Categoria0">Sélectionne une Catégorie</string>
+    <string name="Categoria1">Repas</string>
+    <string name="Categoria2">Loisir</string>
+    <string name="Categoria3">Amusant</string>
+    <string name="Categoria4">Sport</string>
+    <string name="Categoria5">Culture</string>
+    <string name="Categoria6">Tout</string>
+    <string name="Nombre">Nom</string>
+    <string name="NombreHint">Nom de lieu</string>
+    <string name="Categoria">"Catégorie: "</string>
+    <string name="Latitud">Latitude</string>
+    <string name="Longitud">Longitude</string>
+    <string name="Valoracion">"Valorisation: "</string>
+    <string name="Comentarios">Commentaires</string>
+    <string name="ComentariosHint">Ecrire le commentaire sur le lieu</string>
+</resources>

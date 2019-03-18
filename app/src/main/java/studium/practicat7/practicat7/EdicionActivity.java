@@ -139,7 +139,7 @@ public class EdicionActivity extends AppCompatActivity implements LocationListen
             App.productoActivo.setLongitud(longuitud);
             switch (App.accion) {
                 case App.INSERTAR:
-                    LogicLugar.insertarProducto(this, App.productoActivo);
+                    LogicLugar.insertarLugar(this, App.productoActivo);
                     break;
                 case App.EDITAR:
                     LogicLugar.editarLugar(this, App.productoActivo);

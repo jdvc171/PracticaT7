@@ -12,7 +12,7 @@ import java.util.List;
 
 public class LogicLugar {
 
-    public static void insertarProducto(Context context, Lugar p) {
+    public static void insertarLugar(Context context, Lugar p) {
         ContentValues content = new ContentValues();
         content.put(Esquema.Lugar.COLUMN_NAME_NOMBRE, p.getNombre());
         content.put(Esquema.Lugar.COLUMN_NAME_COMENTARIOS, p.getComentarios());
