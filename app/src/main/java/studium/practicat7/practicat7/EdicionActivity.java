@@ -43,12 +43,12 @@ public class EdicionActivity extends AppCompatActivity {
 
         lstSeccion.setAdapter(adapEstados);
 
-       // txtNombre.setText(App.productoActivo.getNombre());
-       // txtComentarios.setText(App.productoActivo.getComentarios());
-       // lstSeccion.setSelection(secciones.indexOf(App.productoActivo.getCategoria()));
-       // RB2.setRating(App.productoActivo.getValoracion());
-       // txtLatitud.setText(App.productoActivo.getLatitud().toString());
-       // txtLongitud.setText(App.productoActivo.getLongitud().toString());
+        txtNombre.setText(App.productoActivo.getNombre());
+        txtComentarios.setText(App.productoActivo.getComentarios());
+        lstSeccion.setSelection(secciones.indexOf(App.productoActivo.getCategoria()));
+        RB2.setRating(App.productoActivo.getValoracion());
+        txtLatitud.setText(App.productoActivo.getLatitud().toString());
+        txtLongitud.setText(App.productoActivo.getLongitud().toString());
 
     }
 }
