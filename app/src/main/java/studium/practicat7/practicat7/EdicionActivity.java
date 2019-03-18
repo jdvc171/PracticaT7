@@ -26,7 +26,6 @@ public class EdicionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edicion);
-
         this.setTitle("EDICIÓN");
 
         txtNombre = findViewById(R.id.txtNombre);
