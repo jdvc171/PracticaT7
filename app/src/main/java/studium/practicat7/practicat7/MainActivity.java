@@ -84,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                App.productoActivo = lstProd.get(position -1);
+                App.accion = App.INFORMACION;
+                startActivity(new Intent(MainActivity.this, InformacionActivity.class));
+            }
+        });
 
 
     }
