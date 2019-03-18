@@ -18,4 +18,5 @@
         <item>@string/Categoria5</item>
         <item>@string/Categoria6</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
 </resources>

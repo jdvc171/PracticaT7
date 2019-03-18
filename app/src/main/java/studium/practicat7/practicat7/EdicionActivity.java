@@ -24,7 +24,6 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -96,7 +95,6 @@ public class EdicionActivity extends AppCompatActivity implements LocationListen
         permissions.add(Manifest.permission.ACCESS_COARSE_LOCATION);
         permissionsToRequest = findUnAskedPermissions(permissions);
 
-
         imgGps2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -115,7 +113,6 @@ public class EdicionActivity extends AppCompatActivity implements LocationListen
                     }
                     getLocation();
                 }
-
             }
         });
 
