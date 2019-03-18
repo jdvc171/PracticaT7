@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         this.setTitle("MIS LUGARES FAVORITOS");
 
         lista1 = findViewById(R.id.lista1);
+        listView = findViewById(R.id.card_listView);
         listView.addHeaderView(new View(this)); // añade espacio arriba de la primera card
         listView.addFooterView(new View(this)); // añade espacio debajo de la última card
 
