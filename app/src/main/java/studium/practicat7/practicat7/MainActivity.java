@@ -1,5 +1,6 @@
 package studium.practicat7.practicat7;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -124,6 +125,12 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+    }
+
+    public void clicNuevo(View view) {
+        App.productoActivo = new Lugar();
+        App.accion = App.INSERTAR;
+        startActivity(new Intent(this, EdicionActivity.class));
     }
 
 
