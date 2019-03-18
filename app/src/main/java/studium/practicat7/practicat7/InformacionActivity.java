@@ -51,6 +51,44 @@ public class InformacionActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.opciones, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.opcEditar: clicEditar(); break;
+            case R.id.opcBorrar: clicBorrar(); break;
+        }
+        return true;
+    }
+
+    public void clicEditar() {
+        App.accion = App.EDITAR;
+        startActivity(new Intent(this, EdicionActivity.class));
+        finish();
+    }
+
+    public void clicBorrar() {
+        new AlertDialog.Builder(this)
+                .setMessage("¿ Quieres borrar el Lugar " + App.productoActivo.getNombre() + " ?")
+                .setCancelable(false)
+                .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        LogicLugar.eliminarLugar(getApplicationContext(), App.productoActivo);
+                        finish();
+                        Intent i = new Intent(InformacionActivity.this   , MainActivity.class);
+                        startActivity(i);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
+
+
+    }
 
 }
