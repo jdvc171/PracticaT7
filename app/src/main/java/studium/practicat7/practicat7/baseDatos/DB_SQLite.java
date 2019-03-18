@@ -1,6 +1,6 @@
-package studium.practicat7.practicat7;
+package studium.practicat7.practicat7.baseDatos;
 
-import studium.practicat7.practicat7.Esquema.Informacion;
+import studium.practicat7.practicat7.baseDatos.Esquema.Informacion;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;

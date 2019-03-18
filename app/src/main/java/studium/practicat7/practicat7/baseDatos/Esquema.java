@@ -1,4 +1,4 @@
-package studium.practicat7.practicat7;
+package studium.practicat7.practicat7.baseDatos;
 
 import android.provider.BaseColumns;
 
