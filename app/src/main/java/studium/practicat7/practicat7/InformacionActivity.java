@@ -51,6 +51,6 @@ public class InformacionActivity extends AppCompatActivity {
 
     }
 
-   
+
 
 }
