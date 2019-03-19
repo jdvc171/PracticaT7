@@ -61,7 +61,7 @@ public class EdicionActivity extends AppCompatActivity implements LocationListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edicion);
-        this.setTitle("EDICIÓN");
+        this.setTitle(R.string.PantallaEdicion);
 
         txtNombre = findViewById(R.id.txtNombre);
         txtComentarios = findViewById(R.id.txtComentarios);

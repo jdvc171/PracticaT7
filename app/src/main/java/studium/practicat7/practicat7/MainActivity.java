@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.setTitle("MIS LUGARES FAVORITOS");
+        this.setTitle(R.string.PantallaPrincipal);
 
         lista1 = findViewById(R.id.lista1);
         listView = findViewById(R.id.card_listView);

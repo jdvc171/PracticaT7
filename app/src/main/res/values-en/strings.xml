@@ -16,4 +16,7 @@
     <string name="Valoracion">"Valoration: "</string>
     <string name="Comentarios">Comments</string>
     <string name="ComentariosHint">Write any comment about the place</string>
+    <string name="PantallaPrincipal">MY FAVOURITE PLACES</string>
+    <string name="PantallaInformacion">INFORMATION</string>
+    <string name="PantallaEdicion">EDITION</string>
 </resources>

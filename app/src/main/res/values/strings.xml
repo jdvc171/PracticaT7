@@ -26,4 +26,8 @@
     <string name="Comentarios">Comentarios</string>
     <string name="ComentariosHint">Introduzca comentarios sobre el lugar</string>
 
+    <string name="PantallaPrincipal">MIS LUGARES FAVORITOS</string>
+    <string name="PantallaInformacion">INFORMACIÓN</string>
+    <string name="PantallaEdicion">EDICIÓN</string>
+
 </resources>

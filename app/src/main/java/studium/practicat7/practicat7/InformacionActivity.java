@@ -24,7 +24,7 @@ public class InformacionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_informacion);
-        this.setTitle("INFORMACIÓN");
+        this.setTitle(R.string.PantallaInformacion);
 
         TextView infoNombre = findViewById(R.id.txtNombreInfo);
         Spinner CatInfo = findViewById(R.id.lstSeccionInfo);
